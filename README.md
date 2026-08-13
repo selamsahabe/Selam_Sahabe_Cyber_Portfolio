@@ -27,6 +27,13 @@ Here are detailed breakdowns of security alerts I investigated and remediated on
 * **Verdict:** `True Positive`
 * **Core Skills:** Command-line forensics, threat actor timeline reconstruction, network isolation.
 * **Brief:** Investigated a live hands-on-keyboard attack where an adversary utilized `certutil.exe` to bypass execution policies, download Nmap, and perform active internal network enumeration.
+
+### 🎣 [SOC141 - Phishing URL Detected](https://github.com/selamsahabe/LetsDefend-SOC141-Phishing-URL-Analysis/blob/main/README.md)
+* **Category:** Proxy Security / Phishing
+* **Verdict:** `True Positive (Accessed)`
+* **Core Skills:** Proxy log analysis, phishing URL triage, workstation isolation.
+* **Brief:** Investigated a High-severity alert where a user accessed a malicious phishing domain (`mogagrocol.ru`). Successfully verified the threat via OSINT and executed immediate network containment on the affected host (`EmilyComp`).
+
 ---
 
 ## 🧰 Skills & Tools
