@@ -41,6 +41,6 @@ Here are detailed breakdowns of security alerts I investigated and remediated on
 ## 📈 Platform Profiles
 
 * 🟦 **LetsDefend:** //[My Profile]()
-* 💼 **LinkedIn:** //[Connect with me]()
+* 💼 **LinkedIn:** //[Connect with me](https://www.linkedin.com/in/selam-sahabe-karadag/)
 
 *“Continuous monitoring, immediate containment, thorough investigation.”*
