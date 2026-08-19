@@ -28,11 +28,19 @@ Here are detailed breakdowns of security alerts I investigated and remediated on
 * **Core Skills:** Command-line forensics, threat actor timeline reconstruction, network isolation.
 * **Brief:** Investigated a live hands-on-keyboard attack where an adversary utilized `certutil.exe` to bypass execution policies, download Nmap, and perform active internal network enumeration.
 
-### 🎣 [SOC141 - Phishing URL Detected](https://github.com/selamsahabe/LetsDefend-SOC141-Phishing-URL-Analysis/blob/main/README.md)
-* **Category:** Proxy Security / Phishing
-* **Verdict:** `True Positive (Accessed)`
-* **Core Skills:** Proxy log analysis, phishing URL triage, workstation isolation.
-* **Brief:** Investigated a High-severity alert where a user accessed a malicious phishing domain (`mogagrocol.ru`). Successfully verified the threat via OSINT and executed immediate network containment on the affected host (`EmilyComp`).
+### 🔑 [SOC143 - Password Stealer Detected](https://github.com/selamsahabe/LetsDefend-SOC143-Password-Stealer-Analysis)
+* **Category:** Email Security / Email Spoofing & Phishing
+* **Verdict:** `True Positive (Contained)`
+* **Core Skills:** Email header validation, attachment threat triage, proactive email eradication.
+* **Brief:** Analyzed a spoofed corporate email claiming to originate from Microsoft. Identified an HTML/Phishing Trojan attachment via VirusTotal. Verified zero-host execution via EDR logs and executed an administrative purge to safely remove the threat from the mailbox.
+
+
+### 🔑 SOC143 - Password Stealer Detected
+Category: Email Security / Email Spoofing & Phishing
+Verdict: True Positive (Contained)
+Core Skills: Email header validation, attachment threat triage, proactive email eradication.
+Brief: Analyzed a spoofed corporate email claiming to originate from Microsoft. Identified an HTML/Phishing Trojan attachment via VirusTotal. Verified zero-host execution via EDR logs and executed an administrative purge to safely remove the threat from the mailbox.
+
 
 ---
 
