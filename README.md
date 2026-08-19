@@ -40,6 +40,13 @@ Here are detailed breakdowns of security alerts I investigated and remediated on
 * **Core Skills:** Email header validation, attachment threat triage, proactive email eradication.
 * **Brief:** Analyzed a spoofed corporate email claiming to originate from Microsoft. Identified an HTML/Phishing Trojan attachment via VirusTotal. Verified zero-host execution via EDR logs and executed an administrative purge to safely remove the threat from the mailbox.
 
+### 🎯 [SOC211 - Utilman.exe Winlogon Exploit Attempt](https://github.com/selamsahabe/-LetsDefend-SOC211-Utilman-Analysis)
+* **Category:** Endpoint Security / Living off the Land (LOLBins)
+* **Verdict:** `True Positive (Contained)`
+* **Core Skills:** Endpoint forensics, persistence detection, Windows security auditing, UAC bypass tracking.
+* **Brief:** Investigated a critical Privilege Escalation and Persistence attack on host `Henry`. Detected the abuse of the Windows accessibility tool (`utilman.exe`) hijacked via registry/binary replacement to spawn a SYSTEM-level CMD shell from the logon screen. Uncovered local backdoor user creation (`superman`), unauthorized elevation to the `Administrators` group, UAC suppression (`/NOUACCHECK`), and a malicious startup script insertion. Executed immediate network isolation on the host to stop active hands-on-keyboard adversary activity.
+
+
 ---
 
 ## 🧰 Skills & Tools
